@@ -78,7 +78,8 @@ FaceApi.prototype.detect = function (image) {
         // Construct query parameters
         let params = {
             returnFaceId: true,
-            returnFaceLandmarks: false
+            returnFaceLandmarks: true,
+            returnFaceAttributes: "headPose"
         }
 
         // Construct AJAX
